@@ -20,36 +20,29 @@ public class Bizz {
         // TODO code application logic here
         System.out.println("-----recherche des multiple de 5-----");
         
-        bizz(3);
-        bizz(2);
-        bizz(19);
-        bizz(5);
-        bizz(9);
-        
-        System.out.println("-----recherche des multiple de 5-----");
-        
-        buzz(5);
-        buzz(12);
-        buzz(15);
-        buzz(10);
-        buzz(9);
+        multiple(3);
+        multiple(2);
+        multiple(19);
+        multiple(5);
+        multiple(9);
     }
     
-    public static void bizz(int val){
-        if(val%3!=0){
-            System.out.println("bizz");
-        }else{
-            System.out.println(""+val+"est un mutliple de 3");
-        }
-        
-    }
-    public static void buzz(int val){
-        if(val%5!=0){
+    public static void multiple(int val){
+        int etat=0;
+        if(val%3==0){
+            
+            etat=1;
+        }else if(val%5==0){
             System.out.println("buzz");
-        }else{
+            etat=2;
+        }
+        if(etat==1){
+            System.out.println(""+val+"est un mutliple de 3");
+        }else if(etat==2){
             System.out.println(""+val+"est un mutliple de 5");
         }
         
     }
+    
     
 }
