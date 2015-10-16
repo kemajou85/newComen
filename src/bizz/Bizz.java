@@ -18,11 +18,21 @@ public class Bizz {
     
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("-----recherche des multiple de 5-----");
+        
         bizz(3);
         bizz(2);
         bizz(19);
         bizz(5);
         bizz(9);
+        
+        System.out.println("-----recherche des multiple de 5-----");
+        
+        buzz(5);
+        buzz(12);
+        buzz(15);
+        buzz(10);
+        buzz(9);
     }
     
     public static void bizz(int val){
@@ -30,6 +40,14 @@ public class Bizz {
             System.out.println("bizz");
         }else{
             System.out.println(""+val+"est un mutliple de 3");
+        }
+        
+    }
+    public static void buzz(int val){
+        if(val%5!=0){
+            System.out.println("buzz");
+        }else{
+            System.out.println(""+val+"est un mutliple de 5");
         }
         
     }
